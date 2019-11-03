@@ -12,14 +12,10 @@ def ocr_core(filename):
     """
     This function will handle the core OCR processing of images.
     """
-    
-    try:
-        img = Image.open(filename)
-        text = pt.image_to_string(img)  # We'll use Pillow's Image class to open the image and pytesseract to detect the string in the image
-    except:
-        return "Error occured"
-    else:
-        return text
+    img = Image.open(filename)
+    text = pt.image_to_string(img)  # We'll use Pillow's Image class to open the image and pytesseract to detect the string in the image
+    return text
+ 
 
 
 # allow files of a specific type
