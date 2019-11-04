@@ -3,8 +3,8 @@
 
 ### Setting up on Heroku
 - Add the two build packs to your heroku app
-    https://github.com/heroku/heroku-buildpack-apt
-    heroku/python
+https://github.com/heroku/heroku-buildpack-apt
+heroku/python
     
 - Ensure you already have your requirements file and apt file then run the following in your heroku CLI
     heroku config:set TESSDATA_PREFIX=./.apt/usr/share/tesseract-ocr/4.00/tessdata
